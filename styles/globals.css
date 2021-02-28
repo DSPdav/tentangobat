@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/fonts/RobotoSlab.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #6fd676;
+  color: #fefefe;
+}
+
+#__next {
+  display: grid;
+  grid-template-rows: 100px 2fr 75px; 
+  grid-auto-flow: row;
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
